@@ -25,10 +25,10 @@ body {
 }
 
 body {
-  font-family: "open-sans", sans-serif;
+  font-family: "Myriad pro", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
-  color: #1a1a1a;
+  color: #545454;
   font-weight: 400;
   direction: ltr;
 }
@@ -48,15 +48,15 @@ img {
 }
 
 h1 {
-  font-size: 3.4rem;
+  font-size: 4.8rem;
 }
 
 h2 {
-  font-size: 2.6rem;
+  font-size: 3.6rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 h4 {
@@ -68,7 +68,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
+  color: #51b5e3;
+  font-family: "Myriad pro bold", sans-serif;
   font-weight: inherit;
   line-height: inherit;
 }
@@ -215,7 +216,7 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-  background-color: #1a1a1a;
+  background-color: #545454;
   color: #fff;
 }
 
@@ -331,6 +332,22 @@ input[type="button"]:hover {
 }
 
 /*Header */
+.header {
+  padding: 1rem;
+}
+.header-me {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+}
+.header-me-img {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  border: 2px solid #ddd;
+  overflow: hidden;
+  border-radius: 50%;
+}
 .header-collapse {
   height: 0;
   -webkit-transition: all 450ms;
@@ -392,10 +409,10 @@ input[type="button"]:hover {
 /* @keyframes & transitions */
 /*Regular give.css */
 .gv-main-face {
-  font-family: "open-sans", sans-serif;
+  font-family: "Myriad pro", sans-serif;
 }
 .gv-heading-face {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Myriad pro bold", sans-serif;
 }
 .gv-bold {
   font-weight: bold;
@@ -699,7 +716,7 @@ input[type="button"]:hover {
   clear: both;
 }
 .gv-color-main {
-  color: #1a1a1a;
+  color: #545454;
 }
 .gv-color-second {
   color: #97783c;
@@ -708,7 +725,7 @@ input[type="button"]:hover {
   color: #fff;
 }
 .gv-bg-main {
-  background-color: #1a1a1a;
+  background-color: #545454;
 }
 .gv-bg-second {
   background-color: #97783c;
@@ -844,11 +861,11 @@ input[type="button"]:hover {
   flex-grow: 1;
   flex-shrink: 0;
 }
-.gv-flex-row {
-  flex-direction: row;
-}
 .gv-flex-row-reverse {
   flex-direction: row-reverse;
+}
+.gv-flex-column {
+  flex-direction: column;
 }
 .gv-flex-column-reverse {
   flex-direction: column-reverse;

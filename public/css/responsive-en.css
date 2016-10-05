@@ -25,10 +25,10 @@
     float: left;
   }
   .header-dropdown-menu {
-    background-color: #1a1a1a;
+    background-color: #545454;
     min-width: 160px;
     border-radius: 4px;
-    box-shadow: 0 1px 5px #191919;
+    box-shadow: 0 1px 5px #535353;
     position: absolute;
     left: 0;
     padding: 0.5rem;
@@ -36,7 +36,7 @@
   }
   .header-dropdown-menu > li > a:hover {
     background-color: #fff;
-    color: #1a1a1a;
+    color: #545454;
   }
 }
 /*Mobile landscape  to infinite */
