@@ -1,0 +1,56 @@
+//Direction
+$direction:'left'
+$dir: null
+$dir-opp: null
+$dir2: null
+$dir-opp2: null
+
+@if $direction == 'left'
+	$dir: left
+	$dir2: ltr
+	$dir-opp: right
+	$dir-opp2: rtl
+@else
+	$dir: right
+	$dir2: rtl
+	$dir-opp: left
+	$dir-opp2: ltr
+
+
+//Typography vars
+$main-font: 1.6rem
+$h1: 3.4rem
+$h2: 2.6rem
+$h3: 2.0rem
+$h4: 1.8rem 
+$main-face: 'open-sans',sans-serif
+$heading-face: 'Open Sans', sans-serif
+
+
+//Colors vars
+$main-color: #1a1a1a //black
+$second-color: #97783c // brown
+$third-color: #fff // white
+
+
+//Values
+$reg: 1.5rem
+$lg: 4rem
+$md: 3rem
+$sm: 1rem
+
+//Border-width
+$border-width-reg: .2rem
+$border-width-lg: .4rem
+$border-width-md: .3rem
+$border-width-sm: .1rem
+
+
+//Border-colors
+$border-color-default: #ddd
+
+//Border-radius
+$border-radius-reg: .5rem
+$border-radius-lg: 2rem
+$border-radius-md: 1rem
+$border-radius-sm: .2rem

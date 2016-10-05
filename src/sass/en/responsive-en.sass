@@ -1,0 +1,131 @@
+@import vars
+@import responsive
+/*Exceptions*/
+@media(max-width: 1366px)
+
+@media (max-width: 1355px)
+
+
+/*HD*/
+@media(min-width: 1440px)
+	
+
+@media(min-width: 1600px)
+	
+
+@media(min-width: 1920px)
+
+
+@media (min-width: 1200px)
+	
+
+	
+/*Small, Med Desktops ,tablets and all mobile Sizes including (phablets) */
+@media (max-width: 991px)
+	
+/*Tablet (portrait) and all mobile Sizes including (phablets) */	
+@media (max-width: 767px)
+	
+
+			
+/*Mobile Landscape to Portrait */
+@media (max-width: 479px)
+	
+
+/*Mobile  Portrait */
+@media (max-width: 320px)
+	
+
+
+/*Small, Med Desktops, tablets landscape To infinite*/
+@media (min-width: 992px)
+
+
+
+/*Tablet portrait to infinite*/
+
+@media (min-width: 768px)
+	.header
+		&-burger
+			display: none
+		&-head
+			height: 0
+		&-collapse
+			height: auto!important
+			overflow: visible
+
+		&-nav
+			&-wrap
+				&>li
+					float: $dir
+		&-dropdown
+			&-menu
+				background-color: $main-color
+				min-width: 160px
+				border-radius: 4px
+				box-shadow: 0 1px 5px darken($main-color,.5)
+				position: absolute
+				#{$dir}: 0
+				padding: .5rem
+				z-index: 10
+				& > li
+					& > a
+						&:hover
+							background-color: $third-color
+							color: $main-color
+
+
+
+/*Mobile landscape  to infinite*/
+@media (min-width: 480px)
+
+
+
+/*Mobile portrait  to infinite*/
+
+@media (min-width: 320px)
+
+
+
+/*Limitaitons*/
+
+/*Med Desktop To HD*/
+@media (min-width: 992px) and (max-width: 1199px)
+
+
+/*Tablet (landscape) to Med Desktop*/
+@media (min-width: 768px) and (max-width: 992px)
+	
+
+/*Mobile Landscape To Tablet (portrait) */
+@media (min-width: 480px) and (max-width: 767px)
+
+
+
+
+
+/*Devices*/
+
+/*ipad - portrait*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation:portrait)
+
+
+/*ipad - landscape*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape)
+
+
+
+
+/* ----------- Apple Watch ----------- */
+@media (max-device-width: 42mm) and (min-device-width: 38mm)  
+
+
+
+/* ----------- Moto 360 Watch ----------- */
+@media (max-device-width: 218px) and (max-device-height: 281px)  
+
+
+
+/*Refernces:CSS-Tricks*/
+
+

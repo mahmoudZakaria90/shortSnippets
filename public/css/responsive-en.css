@@ -1,0 +1,53 @@
+/*Exceptions */
+@media(max-width: 1366px);
+/*HD */
+@media(min-width: 1440px);
+@media(min-width: 1600px);
+@media(min-width: 1920px);
+/*Small, Med Desktops ,tablets and all mobile Sizes including (phablets) */
+/*Tablet (portrait) and all mobile Sizes including (phablets) */
+/*Mobile Landscape to Portrait */
+/*Mobile  Portrait */
+/*Small, Med Desktops, tablets landscape To infinite */
+/*Tablet portrait to infinite */
+@media (min-width: 768px) {
+  .header-burger {
+    display: none;
+  }
+  .header-head {
+    height: 0;
+  }
+  .header-collapse {
+    height: auto !important;
+    overflow: visible;
+  }
+  .header-nav-wrap > li {
+    float: left;
+  }
+  .header-dropdown-menu {
+    background-color: #1a1a1a;
+    min-width: 160px;
+    border-radius: 4px;
+    box-shadow: 0 1px 5px #191919;
+    position: absolute;
+    left: 0;
+    padding: 0.5rem;
+    z-index: 10;
+  }
+  .header-dropdown-menu > li > a:hover {
+    background-color: #fff;
+    color: #1a1a1a;
+  }
+}
+/*Mobile landscape  to infinite */
+/*Mobile portrait  to infinite */
+/*Limitaitons */
+/*Med Desktop To HD */
+/*Tablet (landscape) to Med Desktop */
+/*Mobile Landscape To Tablet (portrait) */
+/*Devices */
+/*ipad - portrait */
+/*ipad - landscape */
+/* ----------- Apple Watch ----------- */
+/* ----------- Moto 360 Watch ----------- */
+/*Refernces:CSS-Tricks */

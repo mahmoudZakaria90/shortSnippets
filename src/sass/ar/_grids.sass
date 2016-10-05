@@ -1,0 +1,36 @@
+/*Grid*/
+$base: 12
+$gutter: 30
+@for $i from 1 through $base
+	.gv
+		&-#{$i}
+			width: (($i / $base) * 100%)
+			position: relative
+			float: $dir
+			padding: 0  $gutter / 2 + px
+
+//row 
+.row
+	+gvMargin(0 -1.5rem)
+
+//clearfix
+.clf
+	&:before,&:after
+		content: ' '
+		display: table
+	&:after
+		clear: both
+
+.header-head,.container
+	&:before,&:after
+		content: ' '
+		display: table
+	&:after
+		clear: both
+
+
+//container
+.container
+	max-width: 960px
+	padding: 0 $reg
+	+gvMargin(0 auto)

@@ -1,0 +1,118 @@
+/*General*/
+/*============*/
+
+//Simple reset
+*
+	margin: 0
+	padding: 0
+	outline: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before,&:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+	
+//base font size
+\:root
+	font-size: 10px
+
+html,
+body
+	height: 100%
+
+
+body
+	font-family: $main-face
+	font-size: $main-font
+	line-height: 1.5
+	color: $main-color
+	font-weight: 400
+	direction: $dir2
+
+/*Give All anchors/button a transition*/
+a,
+button,
+input
+	+gvTransition(background-color 450ms,color 450ms)
+
+
+img  
+	max-width: 100%
+	vertical-align: middle
+	border: none
+
+
+
+h1
+	font-size: $h1
+
+h2
+	font-size: $h2
+
+h3
+	font-size: $h3
+
+h4
+	font-size: $h4
+
+h1,h2,h3,h4,h5,h6,p
+	margin:  0 0 $reg 0
+
+h1,h2,h3,h4,h5,h6
+	font-family: $heading-face
+	font-weight: inherit
+	line-height: inherit
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+	@extend %btn
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="number"]
+	padding: .6rem $reg
+	border: .1rem solid $border-color-default
+	border-radius: $border-radius-reg
+	&:focus
+		border-color: $second-color
+table
+	width: 100%
+	border-spacing: 0
+	border-collapse: collapse
+	&,tr,td
+		border: 1px solid $border-color-default
+		
+
+@for $i from 1 through 6
+	h#{$i}
+		a
+			color: inherit
+			font-size: inherit
+
+//font-awesome icons
+.fa
+	margin: 0 $reg 0
+	text-decoration: none
+	font-size: 2.5rem
+
+label
+	font-weight: normal
+
+
+
+input,button
+	border: none
+	color: inherit
+
+
+::-webkit-input-placeholder
+	color: #aaa
+
+::-moz-placeholder
+	color: #aaa
