@@ -872,6 +872,13 @@ input[type="button"]:hover {
   }
 }
 @media(max-width: 480px) {
+  .header-me-hover {
+    display: none;
+  }
+  .header-logo img {
+    width: 200px;
+  }
+
   h1, h2 {
     font-size: 3rem;
   }
