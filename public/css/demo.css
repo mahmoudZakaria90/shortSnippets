@@ -860,3 +860,23 @@ input[type="button"]:hover {
 .gv-flex-sp-around-v {
   align-content: space-around;
 }
+
+@media(max-width: 768px) {
+  .row {
+    margin-bottom: 0;
+  }
+
+  .gv-4 {
+    width: 50%;
+    margin-bottom: 4rem;
+  }
+}
+@media(max-width: 480px) {
+  h1, h2 {
+    font-size: 3rem;
+  }
+
+  .gv-4 {
+    width: 100%;
+  }
+}
