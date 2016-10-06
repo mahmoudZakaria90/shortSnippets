@@ -1,0 +1,38 @@
+.snippet-wrap {
+  position: relative;
+}
+
+/*Spinners */
+.spinner {
+  position: relative;
+  margin: auto;
+}
+.spinner1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0.5rem solid #ddd;
+  border-top-color: #51b5e3;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+.spinner2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0.5rem solid #ddd;
+  border-right-color: #51b5e3;
+  border-left-color: #51b5e3;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+.spinner3 {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  border: 25px solid transparent;
+  border-right-color: #51b5e3;
+  border-left-color: #51b5e3;
+  -webkit-animation: rotate 0.5s linear infinite;
+  animation: rotate 0.5s linear infinite;
+}

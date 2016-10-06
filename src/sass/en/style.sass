@@ -1,0 +1,32 @@
+.snippet
+	&-wrap
+		position: relative
+@import vars
+@import mixins
+
+/*Spinners*/
+.spinner
+	position: relative
+	margin: auto
+	&1
+		+gvSize(50px,50px)
+		border-radius: 50%
+		border: .5rem solid $border-color-default
+		border-top-color: $blue-color
+		+gvAnimation(rotate 1s linear infinite)
+
+	&2
+		+gvSize(50px,50px)
+		border-radius: 50%
+		border: .5rem solid $border-color-default
+		border-right-color: $blue-color
+		border-left-color: $blue-color
+		+gvAnimation(rotate 1s linear infinite)
+
+	&3
+		+gvSize(0,0)
+		border-radius: 50%
+		border: 25px solid transparent
+		border-right-color: $blue-color
+		border-left-color: $blue-color
+		+gvAnimation(rotate .5s linear infinite)
