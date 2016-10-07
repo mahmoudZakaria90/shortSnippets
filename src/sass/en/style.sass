@@ -55,7 +55,6 @@
 			+gvPosition(absolute,null null null 0)
 			border: .5rem solid
 			border-radius: 50%
-			
 		&-right
 			border-color: white
 			border-right-color: transparent 
@@ -71,3 +70,19 @@
 			border-left-color: $blue-color
 			border-bottom-color: $blue-color
 			
+	&6
+		+gvSize(5rem,5rem)
+		margin: auto
+		+gvAnimation(rotate 5s ease-out infinite)
+		&-right,&-left
+			+gvPosition(absolute,null null null 0)
+			+gvSize(100%,100%)
+			border: .5rem solid transparent
+			border-radius: 50%
+			+gvAnimation(rotate 600ms linear infinite)
+		&-right
+			border-right-color: $blue-color
+		&-left
+			border-left-color: $second-color
+			-webkit-animation-direction: reverse
+			animation-direction: reverse

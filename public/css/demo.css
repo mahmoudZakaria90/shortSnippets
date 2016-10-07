@@ -294,7 +294,7 @@ input[type="button"]:hover {
   padding: 1rem;
 }
 .header-me {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   transform: rotate(32deg) translate(-60%, 18%);
@@ -302,7 +302,7 @@ input[type="button"]:hover {
   transition: all 450ms;
 }
 .header-me-hover {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 15%;
