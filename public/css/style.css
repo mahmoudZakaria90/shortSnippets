@@ -39,10 +39,7 @@
 .spinner4 {
   width: 5rem;
   height: 5rem;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  margin: auto;
 }
 .spinner4-right, .spinner4-left {
   position: absolute;
@@ -65,10 +62,7 @@
 .spinner5 {
   width: 5rem;
   height: 5rem;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  margin: auto;
   color: white;
 }
 .spinner5-right, .spinner5-left {
