@@ -9,14 +9,14 @@
 	position: relative
 	margin: auto
 	&1
-		+gvSize(50px,50px)
+		+gvSize(5rem,5rem)
 		border-radius: 50%
 		border: .5rem solid $border-color-default
 		border-top-color: $blue-color
 		+gvAnimation(rotate 1s linear infinite)
 
 	&2
-		+gvSize(50px,50px)
+		+gvSize(5rem,5rem)
 		border-radius: 50%
 		border: .5rem solid $border-color-default
 		border-right-color: $blue-color
@@ -26,7 +26,52 @@
 	&3
 		+gvSize(0,0)
 		border-radius: 50%
-		border: 25px solid transparent
+		border: 2.5rem solid transparent
 		border-right-color: $blue-color
 		border-left-color: $blue-color
 		+gvAnimation(rotate .5s linear infinite)
+
+	&4
+		+gvSize(5rem,5rem)
+		+gvPosition(absolute,null null null 50%)
+		-webkit-transform: translateX(-50%)
+		transform: translateX(-50%)
+		&-right,&-left
+			+gvPosition(absolute,null null null 0)
+			+gvSize(100%,100%)
+			border: .5rem solid transparent
+			border-radius: 50%
+			+gvAnimation(rotate 800ms linear infinite)
+		&-right
+			border-right-color: $blue-color
+		&-left
+			border-left-color: $second-color
+			-webkit-animation-direction: reverse
+			animation-direction: reverse
+
+	&5
+		+gvSize(5rem,5rem)
+		+gvPosition(absolute,null null null 50%)
+		-webkit-transform: translateX(-50%)
+		transform: translateX(-50%)
+		color: white
+		&-right,&-left
+			+gvPosition(absolute,null null null 0)
+			border: .5rem solid
+			border-radius: 50%
+			
+		&-right
+			border-color: white
+			border-right-color: transparent 
+			border-top-color: transparent 
+			border-width: 2.5rem
+			z-index: 5
+			-webkit-transform: rotate(0) scale(1.1)
+			transform: rotate(0) scale(1.1)
+			+gvAnimation(rotateScale 9s ease-out infinite)
+		&-left
+			+gvSize(100%,100%)
+			+gvAnimation(rotate 4s linear infinite)
+			border-left-color: $blue-color
+			border-bottom-color: $blue-color
+			

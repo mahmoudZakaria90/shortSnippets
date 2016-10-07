@@ -8,8 +8,8 @@
   margin: auto;
 }
 .spinner1 {
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   border: 0.5rem solid #ddd;
   border-top-color: #51b5e3;
@@ -17,8 +17,8 @@
   animation: rotate 1s linear infinite;
 }
 .spinner2 {
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   border: 0.5rem solid #ddd;
   border-right-color: #51b5e3;
@@ -30,9 +30,69 @@
   width: 0;
   height: 0;
   border-radius: 50%;
-  border: 25px solid transparent;
+  border: 2.5rem solid transparent;
   border-right-color: #51b5e3;
   border-left-color: #51b5e3;
   -webkit-animation: rotate 0.5s linear infinite;
   animation: rotate 0.5s linear infinite;
+}
+.spinner4 {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.spinner4-right, .spinner4-left {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0.5rem solid transparent;
+  border-radius: 50%;
+  -webkit-animation: rotate 800ms linear infinite;
+  animation: rotate 800ms linear infinite;
+}
+.spinner4-right {
+  border-right-color: #51b5e3;
+}
+.spinner4-left {
+  border-left-color: #ea8b49;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+.spinner5 {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: white;
+}
+.spinner5-right, .spinner5-left {
+  position: absolute;
+  left: 0;
+  border: 0.5rem solid;
+  border-radius: 50%;
+}
+.spinner5-right {
+  border-color: white;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-width: 2.5rem;
+  z-index: 5;
+  -webkit-transform: rotate(0) scale(1.1);
+  transform: rotate(0) scale(1.1);
+  -webkit-animation: rotateScale 9s ease-out infinite;
+  animation: rotateScale 9s ease-out infinite;
+}
+.spinner5-left {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: rotate 4s linear infinite;
+  animation: rotate 4s linear infinite;
+  border-left-color: #51b5e3;
+  border-bottom-color: #51b5e3;
 }

@@ -342,12 +342,34 @@ input[type="button"]:hover {
 /* @keyframes & transitions */
 @-webkit-keyframes rotate {
   to {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 @keyframes rotate {
   to {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotateScale {
+  to {
+    -webkit-transform: rotate(360deg) scale(1.1);
+    transform: rotate(360deg) scale(1.1);
+  }
+}
+@keyframes rotateScale {
+  30% {
+    -webkit-transform: rotate(0) scale(1.1);
+    transform: rotate(0) scale(1.1);
+  }
+  50%,70% {
+    -webkit-transform: rotate(220deg) scale(1.1);
+    transform: rotate(220deg) scale(1.1);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1.1);
+    transform: rotate(360deg) scale(1.1);
   }
 }
 /*Regular give.css */
