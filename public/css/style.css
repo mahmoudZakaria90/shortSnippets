@@ -136,6 +136,6 @@
   border-bottom-color: transparent;
   border-radius: 10px;
   box-shadow: 0 0 1px transparent;
-  -webkit-animation: rotateX2 10ms infinite;
-  animation: rotateX2 10ms infinite;
+  -webkit-animation: rotateX2 20ms infinite;
+  animation: rotateX2 20ms infinite;
 }
