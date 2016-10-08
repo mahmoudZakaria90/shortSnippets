@@ -256,3 +256,102 @@
   -webkit-animation: rotateY 2s linear infinite;
   animation: rotateY 2s linear infinite;
 }
+.spinner10 {
+  width: 5rem;
+  height: 5rem;
+  margin-top: 2rem;
+  /*outside */
+  /*inside */
+}
+.spinner10 > * {
+  border: 0.2rem solid #ea8b49;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+  box-shadow: 0 0 1px transparent;
+}
+.spinner10 > *:nth-child(odd) {
+  animation-direction: reverse;
+  border-color: #51b5e3;
+  border-right-color: transparent;
+}
+.spinner10-1 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.spinner10-2 {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  -webkit-animation-duration: 600ms;
+  animation-duration: 600ms;
+}
+.spinner10-3 {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  -webkit-animation-duration: 400ms;
+  animation-duration: 400ms;
+}
+.spinner10-4 {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  bottom: -15px;
+  left: -15px;
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+.spinner10-5 {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  bottom: -20px;
+  left: -20px;
+  -webkit-animation-duration: 900ms;
+  animation-duration: 900ms;
+}
+.spinner10-6 {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  -webkit-animation-duration: 700ms;
+  animation-duration: 700ms;
+}
+.spinner10-7 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+.spinner10-8 {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  -webkit-animation-duration: 900ms;
+  animation-duration: 900ms;
+}
+.spinner10-9 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}

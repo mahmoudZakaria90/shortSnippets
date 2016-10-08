@@ -116,3 +116,59 @@
 		border-bottom-color: $orange-color
 		border-radius: 1rem
 		+gvAnimation(rotateY 2s linear infinite)
+
+	&10
+		+gvSize(5rem,5rem)
+		margin-top: 2rem
+		&>*
+			border: .2rem solid $orange-color
+			border-right-color: transparent
+			border-radius: 50%
+			+gvAnimation(rotate 1s linear infinite)
+			+gvAliased()
+			&:nth-child(odd)
+				animation-direction: reverse
+				border-color: $blue-color
+				border-right-color: transparent
+		/*outside*/
+		&-1
+			+gvPosition(absolute, 0px 0px 0px 0px)
+
+		&-2
+			+gvPosition(absolute, -5px -5px -5px -5px)
+			-webkit-animation-duration: 600ms
+			animation-duration: 600ms
+			
+		&-3
+			+gvPosition(absolute, -10px -10px -10px -10px)
+			-webkit-animation-duration: 400ms
+			animation-duration: 400ms
+		&-4
+			+gvPosition(absolute, -15px -15px -15px -15px)
+			-webkit-animation-duration: 500ms
+			animation-duration: 500ms
+		&-5
+			+gvPosition(absolute, -20px -20px -20px -20px)
+			-webkit-animation-duration: 900ms
+			animation-duration: 900ms
+		/*inside*/	
+		&-6
+			+gvPosition(absolute, 5px 5px 5px 5px)
+			-webkit-animation-duration: 700ms
+			animation-duration: 700ms
+
+		&-7
+			+gvPosition(absolute, 10px 10px 10px 10px)
+			-webkit-animation-duration: 800ms
+			animation-duration: 800ms
+
+		&-8
+			+gvPosition(absolute, 15px 15px 15px 15px)
+			-webkit-animation-duration: 900ms
+			animation-duration: 900ms
+
+		&-9
+			+gvPosition(absolute, 20px 20px 20px 20px)
+			-webkit-animation-duration: 1s
+			animation-duration: 1s
+
