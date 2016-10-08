@@ -409,8 +409,8 @@
   background: #51b5e3;
   border-radius: 50%;
   margin-top: 4rem;
-  -webkit-animation: ball 900ms linear infinite;
-  animation: ball 900ms linear infinite;
+  -webkit-animation: ball 1s linear infinite;
+  animation: ball 1s linear infinite;
   z-index: 10;
 }
 .spinner11-shadow {
@@ -421,6 +421,6 @@
   position: relative;
   top: -1rem;
   background-image: radial-gradient(#333 0, transparent 60%);
-  -webkit-animation: width 900ms linear infinite;
-  animation: width 900ms linear infinite;
+  -webkit-animation: width 1s linear infinite;
+  animation: width 1s linear infinite;
 }
