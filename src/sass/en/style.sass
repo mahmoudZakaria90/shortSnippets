@@ -1,6 +1,7 @@
 .snippet
 	&-wrap
 		position: relative
+		perspective: 100px
 @import vars
 @import mixins
 
@@ -43,7 +44,7 @@
 		&-right
 			border-right-color: $blue-color
 		&-left
-			border-left-color: $second-color
+			border-left-color: $orange-color
 			-webkit-animation-direction: reverse
 			animation-direction: reverse
 
@@ -83,6 +84,25 @@
 		&-right
 			border-right-color: $blue-color
 		&-left
-			border-left-color: $second-color
+			border-left-color: $orange-color
 			-webkit-animation-direction: reverse
 			animation-direction: reverse
+
+	&7
+		+gvSize(0,0)
+		border: 2.5rem solid $blue-color
+		border-right-color: transparent
+		border-left-color: transparent
+		border-bottom-color: $orange-color
+		border-radius: 1rem
+		+gvAnimation(rotateX 2s linear infinite)
+
+	&8
+		+gvSize(0,0)
+		border: 2.5rem solid transparent
+		border-right-color: $blue-color
+		border-left-color: $orange-color
+		border-bottom-color: transparent
+		border-radius: 10px
+		+gvAliased()
+		+gvAnimation(rotateX2 10ms infinite)

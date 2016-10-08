@@ -1,5 +1,6 @@
 .snippet-wrap {
   position: relative;
+  perspective: 100px;
 }
 
 /*Spinners */
@@ -114,4 +115,27 @@
   border-left-color: #ea8b49;
   -webkit-animation-direction: reverse;
   animation-direction: reverse;
+}
+.spinner7 {
+  width: 0;
+  height: 0;
+  border: 2.5rem solid #51b5e3;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #ea8b49;
+  border-radius: 1rem;
+  -webkit-animation: rotateX 2s linear infinite;
+  animation: rotateX 2s linear infinite;
+}
+.spinner8 {
+  width: 0;
+  height: 0;
+  border: 2.5rem solid transparent;
+  border-right-color: #51b5e3;
+  border-left-color: #ea8b49;
+  border-bottom-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 1px transparent;
+  -webkit-animation: rotateX2 10ms infinite;
+  animation: rotateX2 10ms infinite;
 }

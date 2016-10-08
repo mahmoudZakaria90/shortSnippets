@@ -1,6 +1,6 @@
 /* @keyframes & transitions*/
 
-//Rotate
+/*Rotate*/
 @-webkit-keyframes rotate
 	to
 		-webkit-transform: rotate(360deg)
@@ -27,5 +27,53 @@
 	100%
 		-webkit-transform: rotate(360deg) scale(1.1)
 		transform: rotate(360deg) scale(1.1)
+
+	
+/*Rotate X */
+
+@-webkit-keyframes rotateX
+	
+	35%
+		-webkit-transform: rotateX(-180deg)
+		transform: rotateX(-180deg)
+	
+	50%,100%
+		-webkit-transform: rotateX(-360deg)
+		transform: rotateX(-360deg)
+
+@keyframes rotateX
+
+	35%
+		-webkit-transform: rotateX(-180deg)
+		transform: rotateX(-180deg)
+	
+	50%,100%
+		-webkit-transform: rotateX(-360deg)
+		transform: rotateX(-360deg)
+
+@-webkit-keyframes rotateX2
+	
+	to
+		-webkit-transform: rotateX(-180deg)
+		transform: rotateX(-180deg)
+
+@keyframes rotateX2
+
+	to
+		-webkit-transform: rotateX(-180deg)
+		transform: rotateX(-180deg)
+
+/* Rotate Y*/
+@-webkit-keyframes rotateY
+	
+	to
+		-webkit-transform: rotateY(-190deg)
+		transform: rotateY(-190deg)
+
+@keyframes rotateY
+
+	to
+		-webkit-transform: rotateY(-190deg)
+		transform: rotateY(-190deg)
 
 	
