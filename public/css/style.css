@@ -404,9 +404,11 @@
   animation-duration: 1s;
 }
 .spinner11 {
-  width: 3rem;
-  height: 3rem;
-  background: #51b5e3;
+  width: 0;
+  height: 0;
+  border: 1.5rem solid #51b5e3;
+  border-right-color: #ea8b49;
+  border-bottom-color: #ea8b49;
   border-radius: 50%;
   margin-top: 4rem;
   -webkit-animation: ball 1s linear infinite;
