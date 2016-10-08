@@ -1,26 +1,29 @@
+
+@import vars
+@import mixins
+@import animation
+
 .snippet
 	&-wrap
 		position: relative
 		perspective: 100px
-@import vars
-@import mixins
-@import animation
 
 /*Spinners*/
 .spinner
 	position: relative
 	margin: auto
+	font-size: 10px
 	&1
-		+gvSize(5rem,5rem)
+		+gvSize(5em,5em)
 		border-radius: 50%
-		border: .5rem solid $border-color-default
+		border: .5em solid $border-color-default
 		border-top-color: $blue-color
 		+gvAnimation(rotate 1s linear infinite)
 
 	&2
-		+gvSize(5rem,5rem)
+		+gvSize(5em,5em)
 		border-radius: 50%
-		border: .5rem solid $border-color-default
+		border: .5em solid $border-color-default
 		border-right-color: $blue-color
 		border-left-color: $blue-color
 		+gvAnimation(rotate 1s linear infinite)
@@ -28,18 +31,18 @@
 	&3
 		+gvSize(0,0)
 		border-radius: 50%
-		border: 2.5rem solid transparent
+		border: 2.5em solid transparent
 		border-right-color: $blue-color
 		border-left-color: $blue-color
 		+gvAnimation(rotate .5s linear infinite)
 
 	&4
-		+gvSize(5rem,5rem)
+		+gvSize(5em,5em)
 		margin: auto
 		&-right,&-left
 			+gvPosition(absolute,null null null 0)
 			+gvSize(100%,100%)
-			border: .5rem solid transparent
+			border: .5em solid transparent
 			border-radius: 50%
 			+gvAnimation(rotate 800ms linear infinite)
 		&-right
@@ -50,18 +53,18 @@
 			animation-direction: reverse
 
 	&5
-		+gvSize(5rem,5rem)
+		+gvSize(5em,5em)
 		margin: auto
 		color: white
 		&-right,&-left
 			+gvPosition(absolute,null null null 0)
-			border: .5rem solid
+			border: .5em solid
 			border-radius: 50%
 		&-right
 			border-color: white
 			border-right-color: transparent 
 			border-top-color: transparent 
-			border-width: 2.5rem
+			border-width: 2.5em
 			z-index: 5
 			-webkit-transform: rotate(0) scale(1.1)
 			transform: rotate(0) scale(1.1)
@@ -73,13 +76,13 @@
 			border-bottom-color: $blue-color
 			
 	&6
-		+gvSize(5rem,5rem)
+		+gvSize(5em,5em)
 		margin: auto
 		+gvAnimation(rotate 5s ease-out infinite)
 		&-right,&-left
 			+gvPosition(absolute,null null null 0)
 			+gvSize(100%,100%)
-			border: .5rem solid transparent
+			border: .5em solid transparent
 			border-radius: 50%
 			+gvAnimation(rotate 600ms linear infinite)
 		&-right
@@ -91,16 +94,16 @@
 
 	&7
 		+gvSize(0,0)
-		border: 2.5rem solid $blue-color
+		border: 2.5em solid $blue-color
 		border-right-color: transparent
 		border-left-color: transparent
 		border-bottom-color: $orange-color
-		border-radius: 1rem
+		border-radius: 1em
 		+gvAnimation(rotateX 2s linear infinite)
 
 	&8
 		+gvSize(0,0)
-		border: 2.5rem solid transparent
+		border: 2.5em solid transparent
 		border-right-color: $blue-color
 		border-left-color: $orange-color
 		border-bottom-color: transparent
@@ -110,18 +113,18 @@
 
 	&9
 		+gvSize(0,0)
-		border: 2.5rem solid $blue-color
+		border: 2.5em solid $blue-color
 		border-right-color: transparent
 		border-left-color: transparent
 		border-bottom-color: $orange-color
-		border-radius: 1rem
+		border-radius: 1em
 		+gvAnimation(rotateY 2s linear infinite)
 
 	&10
-		+gvSize(5rem,5rem)
-		margin-top: 2rem
+		+gvSize(5em,5em)
+		margin-top: 2em
 		&>*
-			border: .2rem solid $orange-color
+			border: .2em solid $orange-color
 			border-right-color: transparent
 			border-radius: 50%
 			+gvAnimation(rotate 1s linear infinite)
@@ -135,58 +138,56 @@
 			+gvPosition(absolute, 0px 0px 0px 0px)
 
 		&-2
-			+gvPosition(absolute, -.5rem -.5rem -.5rem -.5rem)
+			+gvPosition(absolute, -.5em -.5em -.5em -.5em)
 			-webkit-animation-duration: 600ms
 			animation-duration: 600ms
 			
 		&-3
-			+gvPosition(absolute, -1rem -1rem -1rem -1rem)
+			+gvPosition(absolute, -1em -1em -1em -1em)
 			-webkit-animation-duration: 400ms
 			animation-duration: 400ms
 		&-4
-			+gvPosition(absolute, -1.5rem -1.5rem -1.5rem -1.5rem)
+			+gvPosition(absolute, -1.5em -1.5em -1.5em -1.5em)
 			-webkit-animation-duration: 500ms
 			animation-duration: 500ms
 		&-5
-			+gvPosition(absolute, -2rem -2rem -2rem -2rem)
+			+gvPosition(absolute, -2em -2em -2em -2em)
 			-webkit-animation-duration: 900ms
 			animation-duration: 900ms
 		/*inside*/	
 		&-6
-			+gvPosition(absolute, .5rem .5rem .5rem .5rem)
+			+gvPosition(absolute, .5em .5em .5em .5em)
 			-webkit-animation-duration: 700ms
 			animation-duration: 700ms
 
 		&-7
-			+gvPosition(absolute, 1rem 1rem 1rem 1rem)
+			+gvPosition(absolute, 1em 1em 1em 1em)
 			-webkit-animation-duration: 800ms
 			animation-duration: 800ms
 
 		&-8
-			+gvPosition(absolute, 1.5rem 1.5rem 1.5rem 1.5rem)
+			+gvPosition(absolute, 1.5em 1.5em 1.5em 1.5em)
 			-webkit-animation-duration: 900ms
 			animation-duration: 900ms
 
 		&-9
-			+gvPosition(absolute, 2rem 2rem 2rem 2rem)
+			+gvPosition(absolute, 2em 2em 2em 2em)
 			-webkit-animation-duration: 1s
 			animation-duration: 1s
 
 	&11
 		+gvSize(0,0)
-		border: 1.5rem solid $blue-color
-		border-right-color: $orange-color
-		border-bottom-color: $orange-color
+		border: 1.5em solid $blue-color
 		border-radius: 50%
-		margin-top: 4rem
+		margin-top: 4em
 		+gvAnimation(ball 1s linear  infinite)
 		z-index: 10
 		&-shadow
 			
-			+gvSize(10rem,2rem)
+			+gvSize(10em,2em)
 			border-radius: 50%
 			margin: auto
 			position: relative
-			top: -1rem
-			+gvGradient(radial,#333 0,transparent 60%)
+			top: -1em
+			+gvGradient(radial,#333 0%,transparent 60%)
 			+gvAnimation(width 1s linear infinite)

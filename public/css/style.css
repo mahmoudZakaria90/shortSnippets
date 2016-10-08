@@ -1,8 +1,3 @@
-.snippet-wrap {
-  position: relative;
-  perspective: 100px;
-}
-
 /* @keyframes & transitions */
 /*Rotate */
 @-webkit-keyframes rotate {
@@ -157,25 +152,31 @@
     width: 4rem;
   }
 }
+.snippet-wrap {
+  position: relative;
+  perspective: 100px;
+}
+
 /*Spinners */
 .spinner {
   position: relative;
   margin: auto;
+  font-size: 10px;
 }
 .spinner1 {
-  width: 5rem;
-  height: 5rem;
+  width: 5em;
+  height: 5em;
   border-radius: 50%;
-  border: 0.5rem solid #ddd;
+  border: 0.5em solid #ddd;
   border-top-color: #51b5e3;
   -webkit-animation: rotate 1s linear infinite;
   animation: rotate 1s linear infinite;
 }
 .spinner2 {
-  width: 5rem;
-  height: 5rem;
+  width: 5em;
+  height: 5em;
   border-radius: 50%;
-  border: 0.5rem solid #ddd;
+  border: 0.5em solid #ddd;
   border-right-color: #51b5e3;
   border-left-color: #51b5e3;
   -webkit-animation: rotate 1s linear infinite;
@@ -185,15 +186,15 @@
   width: 0;
   height: 0;
   border-radius: 50%;
-  border: 2.5rem solid transparent;
+  border: 2.5em solid transparent;
   border-right-color: #51b5e3;
   border-left-color: #51b5e3;
   -webkit-animation: rotate 0.5s linear infinite;
   animation: rotate 0.5s linear infinite;
 }
 .spinner4 {
-  width: 5rem;
-  height: 5rem;
+  width: 5em;
+  height: 5em;
   margin: auto;
 }
 .spinner4-right, .spinner4-left {
@@ -201,7 +202,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border: 0.5rem solid transparent;
+  border: 0.5em solid transparent;
   border-radius: 50%;
   -webkit-animation: rotate 800ms linear infinite;
   animation: rotate 800ms linear infinite;
@@ -215,22 +216,22 @@
   animation-direction: reverse;
 }
 .spinner5 {
-  width: 5rem;
-  height: 5rem;
+  width: 5em;
+  height: 5em;
   margin: auto;
   color: white;
 }
 .spinner5-right, .spinner5-left {
   position: absolute;
   left: 0;
-  border: 0.5rem solid;
+  border: 0.5em solid;
   border-radius: 50%;
 }
 .spinner5-right {
   border-color: white;
   border-right-color: transparent;
   border-top-color: transparent;
-  border-width: 2.5rem;
+  border-width: 2.5em;
   z-index: 5;
   -webkit-transform: rotate(0) scale(1.1);
   transform: rotate(0) scale(1.1);
@@ -246,8 +247,8 @@
   border-bottom-color: #51b5e3;
 }
 .spinner6 {
-  width: 5rem;
-  height: 5rem;
+  width: 5em;
+  height: 5em;
   margin: auto;
   -webkit-animation: rotate 5s ease-out infinite;
   animation: rotate 5s ease-out infinite;
@@ -257,7 +258,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border: 0.5rem solid transparent;
+  border: 0.5em solid transparent;
   border-radius: 50%;
   -webkit-animation: rotate 600ms linear infinite;
   animation: rotate 600ms linear infinite;
@@ -273,18 +274,18 @@
 .spinner7 {
   width: 0;
   height: 0;
-  border: 2.5rem solid #51b5e3;
+  border: 2.5em solid #51b5e3;
   border-right-color: transparent;
   border-left-color: transparent;
   border-bottom-color: #ea8b49;
-  border-radius: 1rem;
+  border-radius: 1em;
   -webkit-animation: rotateX 2s linear infinite;
   animation: rotateX 2s linear infinite;
 }
 .spinner8 {
   width: 0;
   height: 0;
-  border: 2.5rem solid transparent;
+  border: 2.5em solid transparent;
   border-right-color: #51b5e3;
   border-left-color: #ea8b49;
   border-bottom-color: transparent;
@@ -296,23 +297,23 @@
 .spinner9 {
   width: 0;
   height: 0;
-  border: 2.5rem solid #51b5e3;
+  border: 2.5em solid #51b5e3;
   border-right-color: transparent;
   border-left-color: transparent;
   border-bottom-color: #ea8b49;
-  border-radius: 1rem;
+  border-radius: 1em;
   -webkit-animation: rotateY 2s linear infinite;
   animation: rotateY 2s linear infinite;
 }
 .spinner10 {
-  width: 5rem;
-  height: 5rem;
-  margin-top: 2rem;
+  width: 5em;
+  height: 5em;
+  margin-top: 2em;
   /*outside */
   /*inside */
 }
 .spinner10 > * {
-  border: 0.2rem solid #ea8b49;
+  border: 0.2em solid #ea8b49;
   border-right-color: transparent;
   border-radius: 50%;
   -webkit-animation: rotate 1s linear infinite;
@@ -333,96 +334,94 @@
 }
 .spinner10-2 {
   position: absolute;
-  top: -0.5rem;
-  right: -0.5rem;
-  bottom: -0.5rem;
-  left: -0.5rem;
+  top: -0.5em;
+  right: -0.5em;
+  bottom: -0.5em;
+  left: -0.5em;
   -webkit-animation-duration: 600ms;
   animation-duration: 600ms;
 }
 .spinner10-3 {
   position: absolute;
-  top: -1rem;
-  right: -1rem;
-  bottom: -1rem;
-  left: -1rem;
+  top: -1em;
+  right: -1em;
+  bottom: -1em;
+  left: -1em;
   -webkit-animation-duration: 400ms;
   animation-duration: 400ms;
 }
 .spinner10-4 {
   position: absolute;
-  top: -1.5rem;
-  right: -1.5rem;
-  bottom: -1.5rem;
-  left: -1.5rem;
+  top: -1.5em;
+  right: -1.5em;
+  bottom: -1.5em;
+  left: -1.5em;
   -webkit-animation-duration: 500ms;
   animation-duration: 500ms;
 }
 .spinner10-5 {
   position: absolute;
-  top: -2rem;
-  right: -2rem;
-  bottom: -2rem;
-  left: -2rem;
+  top: -2em;
+  right: -2em;
+  bottom: -2em;
+  left: -2em;
   -webkit-animation-duration: 900ms;
   animation-duration: 900ms;
 }
 .spinner10-6 {
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  bottom: 0.5rem;
-  left: 0.5rem;
+  top: 0.5em;
+  right: 0.5em;
+  bottom: 0.5em;
+  left: 0.5em;
   -webkit-animation-duration: 700ms;
   animation-duration: 700ms;
 }
 .spinner10-7 {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  bottom: 1rem;
-  left: 1rem;
+  top: 1em;
+  right: 1em;
+  bottom: 1em;
+  left: 1em;
   -webkit-animation-duration: 800ms;
   animation-duration: 800ms;
 }
 .spinner10-8 {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  bottom: 1.5rem;
-  left: 1.5rem;
+  top: 1.5em;
+  right: 1.5em;
+  bottom: 1.5em;
+  left: 1.5em;
   -webkit-animation-duration: 900ms;
   animation-duration: 900ms;
 }
 .spinner10-9 {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
-  bottom: 2rem;
-  left: 2rem;
+  top: 2em;
+  right: 2em;
+  bottom: 2em;
+  left: 2em;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
 .spinner11 {
   width: 0;
   height: 0;
-  border: 1.5rem solid #51b5e3;
-  border-right-color: #ea8b49;
-  border-bottom-color: #ea8b49;
+  border: 1.5em solid #51b5e3;
   border-radius: 50%;
-  margin-top: 4rem;
+  margin-top: 4em;
   -webkit-animation: ball 1s linear infinite;
   animation: ball 1s linear infinite;
   z-index: 10;
 }
 .spinner11-shadow {
-  width: 10rem;
-  height: 2rem;
+  width: 10em;
+  height: 2em;
   border-radius: 50%;
   margin: auto;
   position: relative;
-  top: -1rem;
-  background-image: radial-gradient(#333 0, transparent 60%);
+  top: -1em;
+  background-image: radial-gradient(#333 0%, transparent 60%);
   -webkit-animation: width 1s linear infinite;
   animation: width 1s linear infinite;
 }

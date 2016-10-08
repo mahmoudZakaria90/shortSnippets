@@ -856,7 +856,7 @@ input[type="button"]:hover {
   }
 
   .gv-4 {
-    width: 50%;
+    width: 100%;
     margin-bottom: 4rem;
   }
 }
@@ -870,9 +870,5 @@ input[type="button"]:hover {
 
   h1, h2 {
     font-size: 3rem;
-  }
-
-  .gv-4 {
-    width: 100%;
   }
 }
