@@ -4,6 +4,7 @@
 		perspective: 100px
 @import vars
 @import mixins
+@import animation
 
 /*Spinners*/
 .spinner
@@ -106,3 +107,12 @@
 		border-radius: 10px
 		+gvAliased()
 		+gvAnimation(rotateX2 20ms infinite)
+
+	&9
+		+gvSize(0,0)
+		border: 2.5rem solid $blue-color
+		border-right-color: transparent
+		border-left-color: transparent
+		border-bottom-color: $orange-color
+		border-radius: 1rem
+		+gvAnimation(rotateY 2s linear infinite)
