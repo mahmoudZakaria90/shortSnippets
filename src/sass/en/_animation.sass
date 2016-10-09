@@ -10,21 +10,31 @@
 		-webkit-transform: rotate(360deg)
 		transform: rotate(360deg)
 
+
+@-webkit-keyframes rotate2
+
+	50%
+		-webkit-transform: rotate(180deg) 
+		transform: rotate(180deg) 
+	100%
+		-webkit-transform: rotate(360deg)
+		transform: rotate(360deg)
+@keyframes rotate2
+	50%
+		-webkit-transform: rotate(180deg) 
+		transform: rotate(180deg) 
+	100%
+		-webkit-transform: rotate(360deg)
+		transform: rotate(360deg)
+
 	/*********************/
 
-@-webkit-keyframes rotateScale
-	to
-		-webkit-transform: rotate(360deg) scale(1.1)
-		transform: rotate(360deg) scale(1.1)
+
 @keyframes rotateScale
-	30%
-		-webkit-transform: rotate(0) scale(1.1)
-		transform: rotate(0) scale(1.1)
 	
-	50%,70%
-		-webkit-transform: rotate(220deg) scale(1.1)
-		transform: rotate(220deg) scale(1.1)
-	
+	50%
+		-webkit-transform: rotate(180deg) scale(1.1)
+		transform: rotate(180deg) scale(1.1)
 
 	100%
 		-webkit-transform: rotate(360deg) scale(1.1)

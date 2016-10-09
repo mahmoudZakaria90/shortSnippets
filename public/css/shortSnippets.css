@@ -11,22 +11,32 @@
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+@-webkit-keyframes rotate2 {
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
   /******************** */
 }
-@-webkit-keyframes rotateScale {
-  to {
-    -webkit-transform: rotate(360deg) scale(1.1);
-    transform: rotate(360deg) scale(1.1);
-  }
-}
 @keyframes rotateScale {
-  30% {
-    -webkit-transform: rotate(0) scale(1.1);
-    transform: rotate(0) scale(1.1);
-  }
-  50%,70% {
-    -webkit-transform: rotate(220deg) scale(1.1);
-    transform: rotate(220deg) scale(1.1);
+  50% {
+    -webkit-transform: rotate(180deg) scale(1.1);
+    transform: rotate(180deg) scale(1.1);
   }
   100% {
     -webkit-transform: rotate(360deg) scale(1.1);
@@ -286,14 +296,14 @@
   z-index: 5;
   -webkit-transform: rotate(0) scale(1.1);
   transform: rotate(0) scale(1.1);
-  -webkit-animation: rotateScale 9s ease-out infinite;
-  animation: rotateScale 9s ease-out infinite;
+  -webkit-animation: rotateScale 2s 0.5s ease-in-out infinite;
+  animation: rotateScale 2s 0.5s ease-in-out infinite;
 }
 .spinner5-left {
   width: 100%;
   height: 100%;
-  -webkit-animation: rotate 4s linear infinite;
-  animation: rotate 4s linear infinite;
+  -webkit-animation: rotate2 2s ease-in-out infinite;
+  animation: rotate2 2s ease-in-out infinite;
   border-left-color: #51b5e3;
   border-bottom-color: #51b5e3;
 }
