@@ -202,11 +202,11 @@
   }
   50% {
     top: 3em;
-    left: 1em;
+    left: 0em;
   }
   75% {
     top: 2em;
-    left: 0em;
+    left: -2em;
   }
   100% {
     top: 0;
