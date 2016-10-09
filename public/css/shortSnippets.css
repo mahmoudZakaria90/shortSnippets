@@ -107,49 +107,96 @@
 /* Translate Y */
 @-webkit-keyframes ball {
   0%,100% {
-    -webkit-transform: translateY(-5rem);
-    transform: translateY(-5rem);
-    width: 3rem;
+    -webkit-transform: translateY(-5em);
+    transform: translateY(-5em);
+    width: 3em;
   }
   50% {
-    -webkit-transform: translateY(0rem);
-    transform: translateY(0rem);
-    width: 3rem;
+    -webkit-transform: translateY(0em);
+    transform: translateY(0em);
+    width: 3em;
   }
   55% {
-    width: 4rem;
+    width: 4em;
   }
 }
 @keyframes ball {
   0%,100% {
-    -webkit-transform: translateY(-5rem);
-    transform: translateY(-5rem);
-    width: 3rem;
+    -webkit-transform: translateY(-5em);
+    transform: translateY(-5em);
+    width: 3em;
   }
   50% {
-    -webkit-transform: translateY(0rem);
-    transform: translateY(0rem);
-    width: 3rem;
+    -webkit-transform: translateY(0em);
+    transform: translateY(0em);
+    width: 3em;
   }
   55% {
-    width: 4rem;
+    width: 4em;
   }
   /******************** */
 }
 @-webkit-keyframes width {
   0%,100% {
-    width: 10rem;
+    width: 10em;
   }
   52% {
-    width: 4rem;
+    width: 4em;
   }
 }
 @keyframes width {
   0%,100% {
-    width: 10rem;
+    width: 10em;
   }
   52% {
-    width: 4rem;
+    width: 4em;
+  }
+  /******************** */
+}
+/* Scale Y */
+@-webkit-keyframes scaleY {
+  to {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+@keyframes scaleY {
+  to {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  /******************** */
+}
+@-webkit-keyframes move {
+  25% {
+    top: 5em;
+    left: 5em;
+  }
+  50% {
+    top: 5em;
+    left: 2em;
+  }
+  75% {
+    top: 0em;
+    left: 2em;
+  }
+}
+@keyframes move {
+  25% {
+    top: 2em;
+    left: 2em;
+  }
+  50% {
+    top: 3em;
+    left: 1em;
+  }
+  75% {
+    top: 2em;
+    left: 0em;
+  }
+  100% {
+    top: 0;
+    left: 0;
   }
 }
 .snippet-wrap {
@@ -290,9 +337,13 @@
   border-left-color: #ea8b49;
   border-bottom-color: transparent;
   border-radius: 10px;
+  top: 0;
+  left: 0;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
   box-shadow: 0 0 1px transparent;
-  -webkit-animation: rotateX2 100ms infinite;
-  animation: rotateX2 100ms infinite;
+  -webkit-animation: scaleY 65ms infinite alternate, move 5s infinite;
+  animation: scaleY 65ms infinite alternate, move 5s infinite;
 }
 .spinner9 {
   width: 0;

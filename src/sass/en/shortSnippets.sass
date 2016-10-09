@@ -107,8 +107,12 @@
 		border-left-color: $orange-color
 		border-bottom-color: transparent
 		border-radius: 10px
+		top: 0
+		left: 0
+		-webkit-transform: scaleY(0)
+		transform: scaleY(0)
 		+gvAliased()
-		+gvAnimation(rotateX2 100ms infinite)
+		+gvAnimation(scaleY 65ms infinite alternate,move 5s infinite)
 
 	&9
 		+gvSize(0,0)
