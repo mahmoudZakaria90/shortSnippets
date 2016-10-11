@@ -10,6 +10,24 @@
 		-webkit-transform: rotate(360deg)
 		transform: rotate(360deg)
 
+	/*********************/
+
+@-webkit-keyframes rotateHalf
+	0%,10%
+		-webkit-transform: rotate(0)
+		transform: rotate(0)
+	90%,100%
+		-webkit-transform: rotate(180deg)
+		transform: rotate(180deg)
+@keyframes rotateHalf
+	0%,10%
+		-webkit-transform: rotate(0)
+		transform: rotate(0)
+	90%,100%
+		-webkit-transform: rotate(180deg)
+		transform: rotate(180deg)
+
+	/*********************/
 
 @-webkit-keyframes rotate2
 
@@ -220,3 +238,14 @@
 	100%
 		top: 0
 		left: 0
+
+
+	/*********************/
+
+@-webkit-keyframes shadowSwitch
+	50%
+		box-shadow: 5em 0 $blue-color,-5em 0 $main-color
+
+@keyframes shadowSwitch
+	50%
+		box-shadow: 5em 0 $blue-color,-5em 0 $main-color

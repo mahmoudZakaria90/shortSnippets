@@ -11,6 +11,28 @@
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+  /******************** */
+}
+@-webkit-keyframes rotateHalf {
+  0%,10% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  90%,100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotateHalf {
+  0%,10% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  90%,100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  /******************** */
 }
 @-webkit-keyframes rotate2 {
   50% {
@@ -212,18 +234,30 @@
     top: 0;
     left: 0;
   }
+  /******************** */
+}
+@-webkit-keyframes shadowSwitch {
+  50% {
+    box-shadow: 5em 0 #51b5e3, -5em 0 #545454;
+  }
+}
+@keyframes shadowSwitch {
+  50% {
+    box-shadow: 5em 0 #51b5e3, -5em 0 #545454;
+  }
 }
 .snippet-wrap {
   position: relative;
   perspective: 100px;
 }
 
-/*Spinners */
-.spinner {
+.snippet {
   position: relative;
   margin: auto;
   font-size: 10px;
 }
+
+/*Spinners */
 .spinner1 {
   width: 5em;
   height: 5em;
@@ -373,7 +407,6 @@
 .spinner10 {
   width: 5em;
   height: 5em;
-  margin-top: 2em;
   /*outside */
   /*inside */
 }
@@ -386,9 +419,10 @@
   box-shadow: 0 0 1px transparent;
 }
 .spinner10 > *:nth-child(odd) {
+  -webkit-animation-direction: reverse;
   animation-direction: reverse;
   border-color: #51b5e3;
-  border-right-color: transparent;
+  border-left-color: transparent;
 }
 .spinner10-1 {
   position: absolute;
@@ -474,7 +508,6 @@
   height: 0;
   border: 1.5em solid #51b5e3;
   border-radius: 50%;
-  margin-top: 4em;
   -webkit-animation: ball 1s linear infinite;
   animation: ball 1s linear infinite;
   z-index: 10;
@@ -489,4 +522,24 @@
   background-image: radial-gradient(#333 0%, transparent 60%);
   -webkit-animation: width 1s linear infinite;
   animation: width 1s linear infinite;
+}
+
+/*Shadow */
+.shadow1 {
+  width: 0;
+  height: 0;
+  border: 1em solid #ea8b49;
+  border-radius: 50%;
+  box-shadow: -5em 0 #51b5e3, 5em 0 #545454, 0 0 1px transparent;
+  -webkit-animation: shadowSwitch 2s infinite ease-in-out;
+  animation: shadowSwitch 2s infinite ease-in-out;
+}
+.shadow2 {
+  width: 0;
+  height: 0;
+  border: 1em solid #ea8b49;
+  border-radius: 50%;
+  box-shadow: -4em 0 #51b5e3, 4em 0 #545454, 0 0 1px transparent;
+  -webkit-animation: rotateHalf 500ms infinite alternate linear;
+  animation: rotateHalf 500ms infinite alternate linear;
 }

@@ -339,6 +339,10 @@ input[type="button"]:hover {
   text-align: left;
 }
 
+.gv-4 h3 {
+  margin-bottom: 4rem;
+}
+
 /*Regular give.css */
 .gv-main-face {
   font-family: "Myriad pro", sans-serif;
@@ -653,10 +657,10 @@ input[type="button"]:hover {
 .gv-color-main {
   color: #545454;
 }
-.gv-color-second {
+.gv-color-blue {
   color: #ea8b49;
 }
-.gv-color-blue {
+.gv-color-orange {
   color: #ea8b49;
 }
 .gv-bg-main {

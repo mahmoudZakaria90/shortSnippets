@@ -7,11 +7,14 @@
 		position: relative
 		perspective: 100px
 
-/*Spinners*/
-.spinner
+
+.snippet
 	position: relative
 	margin: auto
 	font-size: 10px
+
+/*Spinners*/	
+.spinner
 	&1
 		+gvSize(5em,5em)
 		border-radius: 50%
@@ -125,7 +128,6 @@
 
 	&10
 		+gvSize(5em,5em)
-		margin-top: 2em
 		&>*
 			border: .2em solid $orange-color
 			border-right-color: transparent
@@ -133,9 +135,10 @@
 			+gvAnimation(rotate 1s linear infinite)
 			+gvAliased()
 			&:nth-child(odd)
+				-webkit-animation-direction: reverse
 				animation-direction: reverse
 				border-color: $blue-color
-				border-right-color: transparent
+				border-left-color: transparent
 		/*outside*/
 		&-1
 			+gvPosition(absolute, 0px 0px 0px 0px)
@@ -182,7 +185,6 @@
 		+gvSize(0,0)
 		border: 1.5em solid $blue-color
 		border-radius: 50%
-		margin-top: 4em
 		+gvAnimation(ball 1s linear  infinite)
 		z-index: 10
 		&-shadow
@@ -194,3 +196,20 @@
 			top: -1em
 			+gvGradient(radial,#333 0%,transparent 60%)
 			+gvAnimation(width 1s linear infinite)
+
+/*Shadow*/
+
+.shadow
+	&1
+		+gvSize(0,0)
+		border: 1em solid $orange-color
+		border-radius: 50%
+		box-shadow: -5em 0 $blue-color,5em 0 $main-color, 0 0 1px rgba(0,0,0,0)//anti-aliased Rocks!!
+		+gvAnimation(shadowSwitch 2s infinite ease-in-out)
+
+	&2
+		+gvSize(0,0)
+		border: 1em solid $orange-color
+		border-radius: 50%
+		box-shadow: -4em 0 $blue-color,4em 0 $main-color, 0 0 1px rgba(0,0,0,0)//anti-aliased Rocks!!
+		+gvAnimation(rotateHalf 500ms infinite alternate linear)
