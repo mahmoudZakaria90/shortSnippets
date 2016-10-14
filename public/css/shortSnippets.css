@@ -236,6 +236,19 @@
   }
   /******************** */
 }
+@-webkit-keyframes move2 {
+  to {
+    -webkit-transform: translateY(-20em) translateZ(0);
+    transform: translateY(-20em) translateZ(0);
+  }
+}
+@keyframes move2 {
+  to {
+    -webkit-transform: translateY(-20em) translateZ(0);
+    transform: translateY(-20em) translateZ(0);
+  }
+  /******************** */
+}
 @-webkit-keyframes shadowSwitch {
   50% {
     box-shadow: 5em 0 #51b5e3, -5em 0 #545454;
@@ -542,4 +555,26 @@
   box-shadow: -4em 0 #51b5e3, 4em 0 #545454, 0 0 1px transparent;
   -webkit-animation: rotateHalf 500ms infinite alternate linear;
   animation: rotateHalf 500ms infinite alternate linear;
+}
+
+.road {
+  perspective: 30px;
+}
+.road-inner {
+  width: 5em;
+  height: 10em;
+  margin: 0 auto 2.5rem;
+  background-color: #51b5e3;
+  -webkit-transform: rotateX(25deg);
+  transform: rotateX(25deg);
+  overflow: hidden;
+}
+.road-block {
+  width: 30%;
+  height: 30%;
+  box-shadow: 0 0 1px transparent;
+  margin: 0 auto 2rem;
+  background-color: white;
+  -webkit-animation: move2 2s linear infinite;
+  animation: move2 2s linear infinite;
 }

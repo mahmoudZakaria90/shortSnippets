@@ -213,3 +213,23 @@
 		border-radius: 50%
 		box-shadow: -4em 0 $blue-color,4em 0 $main-color, 0 0 1px rgba(0,0,0,0)//anti-aliased Rocks!!
 		+gvAnimation(rotateHalf 500ms infinite alternate linear)
+
+
+
+.road
+	perspective: 30px
+	&-inner
+		+gvSize(5em,10em)
+		margin: 0 auto 2.5rem
+		background-color: $blue-color
+		-webkit-transform: rotateX(25deg)
+		transform: rotateX(25deg)
+		overflow: hidden
+	&-block
+		+gvSize(30%,30%)
+		+gvAliased()
+		margin: 0 auto 2rem
+		background-color: white
+		+gvAnimation(move2 2s linear infinite)
+
+

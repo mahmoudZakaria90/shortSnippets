@@ -264,7 +264,7 @@ input[type="button"]:hover {
 }
 
 .row {
-  margin: 0 -1.5rem 4rem;
+  margin: 0 -1.5rem 7rem;
 }
 
 .clf:before, .clf:after {
@@ -335,14 +335,6 @@ input[type="button"]:hover {
 
 /*Footer */
 /*Custom */
-.main-content-list {
-  text-align: left;
-}
-
-.gv-4 h3 {
-  margin-bottom: 4rem;
-}
-
 /*Regular give.css */
 .gv-main-face {
   font-family: "Myriad pro", sans-serif;
@@ -852,6 +844,14 @@ input[type="button"]:hover {
 }
 .gv-flex-sp-around-v {
   align-content: space-around;
+}
+
+.main-content-list {
+  text-align: left;
+}
+
+.gv-4 h3 {
+  margin-bottom: 4rem;
 }
 
 @media(max-width: 768px) {
