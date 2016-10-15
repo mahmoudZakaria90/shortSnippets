@@ -212,8 +212,14 @@
 		border: 1em solid $orange-color
 		border-radius: 50%
 		box-shadow: -4em 0 $blue-color,4em 0 $main-color, 0 0 1px rgba(0,0,0,0)//anti-aliased Rocks!!
-		+gvAnimation(rotateHalf 500ms infinite alternate linear)
+		+gvAnimation(rotateHalf 400ms infinite alternate linear)
 
+	&3
+		+gvSize(0,0)
+		border: 1em solid $orange-color
+		border-radius: 50%
+		box-shadow: -5em 0 $blue-color,5em 0 $main-color
+		+gvAnimation(shadowSwitch 1s infinite ease-in-out)
 
 
 .road
@@ -232,4 +238,13 @@
 		background-color: white
 		+gvAnimation(move2 2s linear infinite)
 
+	img
+		width: 10em
+		position: absolute
+		z-index: 1
+		top: 25px
+		left: 50%
+		-webkit-transform: translateX(-50%) translateY(0)
+		transform: translateX(-50%) translateY(0)
+		+gvAnimation(jump 300ms linear infinite)
 

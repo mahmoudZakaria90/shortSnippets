@@ -86,6 +86,25 @@
 
 	/*********************/
 
+@-webkit-keyframes rotateXHalf
+	0%,10%
+		-webkit-transform: rotateX(0)
+		transform: rotateX(0)
+	90%,100%
+		-webkit-transform: rotateX(180deg)
+		transform: rotateX(180deg)
+
+@keyframes rotateXHalf
+	0%,10%
+		-webkit-transform: rotateX(0)
+		transform: rotateX(0)
+	90%,100%
+		-webkit-transform: rotateX(180deg)
+		transform: rotateX(180deg)
+
+	/*********************/
+
+
 @-webkit-keyframes rotateX2
 	
 	to
@@ -97,6 +116,19 @@
 	to
 		-webkit-transform: rotateX(-180deg)
 		transform: rotateX(-180deg)
+
+	/*********************/
+
+
+@-webkit-keyframes rotateX3
+	to
+		-webkit-transform: rotateX(360deg)
+		transform: rotateX(360deg)
+
+@keyframes rotateX3
+	to
+		-webkit-transform: rotateX(360deg)
+		transform: rotateX(360deg)
 
 	/*********************/
 
@@ -239,6 +271,17 @@
 		top: 0
 		left: 0
 
+	/*********************/
+	
+@-webkit-keyframes jump
+	50%
+		-webkit-transform: translateX(-50%) translateY(-.5em)
+		transform: translateX(-50%) translateY(-.5em)
+
+@keyframes jump
+	50%
+		-webkit-transform: translateX(-50%) translateY(-.5em)
+		transform: translateX(-50%) translateY(-.5em)
 
 	/*********************/
 @-webkit-keyframes move2

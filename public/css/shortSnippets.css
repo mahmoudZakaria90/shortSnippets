@@ -88,6 +88,27 @@
   }
   /******************** */
 }
+@-webkit-keyframes rotateXHalf {
+  0%,10% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  90%,100% {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+}
+@keyframes rotateXHalf {
+  0%,10% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  90%,100% {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+  /******************** */
+}
 @-webkit-keyframes rotateX2 {
   to {
     -webkit-transform: rotateX(-180deg);
@@ -98,6 +119,19 @@
   to {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
+  }
+  /******************** */
+}
+@-webkit-keyframes rotateX3 {
+  to {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+@keyframes rotateX3 {
+  to {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
   }
   /******************** */
 }
@@ -233,6 +267,19 @@
   100% {
     top: 0;
     left: 0;
+  }
+  /******************** */
+}
+@-webkit-keyframes jump {
+  50% {
+    -webkit-transform: translateX(-50%) translateY(-0.5em);
+    transform: translateX(-50%) translateY(-0.5em);
+  }
+}
+@keyframes jump {
+  50% {
+    -webkit-transform: translateX(-50%) translateY(-0.5em);
+    transform: translateX(-50%) translateY(-0.5em);
   }
   /******************** */
 }
@@ -553,8 +600,17 @@
   border: 1em solid #ea8b49;
   border-radius: 50%;
   box-shadow: -4em 0 #51b5e3, 4em 0 #545454, 0 0 1px transparent;
-  -webkit-animation: rotateHalf 500ms infinite alternate linear;
-  animation: rotateHalf 500ms infinite alternate linear;
+  -webkit-animation: rotateHalf 400ms infinite alternate linear;
+  animation: rotateHalf 400ms infinite alternate linear;
+}
+.shadow3 {
+  width: 0;
+  height: 0;
+  border: 1em solid #ea8b49;
+  border-radius: 50%;
+  box-shadow: -5em 0 #51b5e3, 5em 0 #545454;
+  -webkit-animation: shadowSwitch 1s infinite ease-in-out;
+  animation: shadowSwitch 1s infinite ease-in-out;
 }
 
 .road {
@@ -577,4 +633,15 @@
   background-color: white;
   -webkit-animation: move2 2s linear infinite;
   animation: move2 2s linear infinite;
+}
+.road img {
+  width: 10em;
+  position: absolute;
+  z-index: 1;
+  top: 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(0);
+  transform: translateX(-50%) translateY(0);
+  -webkit-animation: jump 300ms linear infinite;
+  animation: jump 300ms linear infinite;
 }
