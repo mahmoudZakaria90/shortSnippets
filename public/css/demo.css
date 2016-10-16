@@ -650,7 +650,7 @@ input[type="button"]:hover {
   color: #545454;
 }
 .gv-color-blue {
-  color: #ea8b49;
+  color: #51b5e3;
 }
 .gv-color-orange {
   color: #ea8b49;
@@ -658,11 +658,11 @@ input[type="button"]:hover {
 .gv-bg-main {
   background-color: #545454;
 }
-.gv-bg-second {
+.gv-bg-orange {
   background-color: #ea8b49;
 }
 .gv-bg-blue {
-  background-color: #ea8b49;
+  background-color: #51b5e3;
 }
 .gv-bg-center {
   background-position: center center;
