@@ -1,5 +1,5 @@
 {
-  "name": "besty-flow",
+  "name": "shortSnippets",
   "version": "1.0.0",
   "description": "Multiple classes = Shape your styles + Make/edit your web pages faster",
   "main": "gulpfile.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mahmoudZakaria90/besty-flow.git"
+    "url": "git+https://github.com/mahmoudZakaria90/shortSnippets.git"
   },
   "keywords": [
     "HTML",
@@ -19,15 +19,15 @@
   "author": "Mahmoud Zakaria",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mahmoudZakaria90/besty-flow/issues"
+    "url": "https://github.com/mahmoudZakaria90/shortSnippets/issues"
   },
-  "homepage": "https://github.com/mahmoudZakaria90/besty-flow#readme",
+  "homepage": "https://github.com/mahmoudZakaria90/shortSnippets#readme",
   "devDependencies": {
-    "browserify": "^13.1.0",
     "gulp": "^3.9.1",
-    "gulp-browserify": "^0.5.1",
     "gulp-connect": "^5.0.0",
+    "gulp-csso": "^2.0.0",
     "gulp-ruby-sass": "^2.1.0",
-    "vinyl-source-stream": "^1.1.0"
+    "gulp-uglify": "^2.0.0",
+    "pump": "^1.0.1"
   }
 }
