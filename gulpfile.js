@@ -7,7 +7,10 @@ var pump = require('pump');
 
 //sass
 gulp.task('sass', function () {
-   sass('./src/sass/en/*.sass',{style:'compressed'})
+   sass('./src/sass/en/*.sass',{style:'expanded'})
+   .on('error', sass.logError)
+    .pipe(connect.reload())
+    .pipe(gulp.dest('./public/css'));
    sass('./src/sass/en/shortSnippets.sass',{style:'expanded'})
     .on('error', sass.logError)
     .pipe(connect.reload())
@@ -32,12 +35,7 @@ gulp.task('html', function() {
 
 
 
-//css minify
-gulp.task('csso', function () {
-    return gulp.src('./public/css/*.css')
-        .pipe(csso())
-        .pipe(gulp.dest('./public/css/'));
-});
+
 
 
 //js uglify
@@ -60,4 +58,4 @@ gulp.task('server',function(){
 })
 
 //default
-gulp.task('default',['watch','server','csso','compress'])
+gulp.task('default',['watch','server','compress'])

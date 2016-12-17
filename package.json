@@ -26,7 +26,7 @@
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-csso": "^2.0.0",
-    "gulp-ruby-sass": "^2.1.0",
+    "gulp-ruby-sass": "^2.1.1",
     "gulp-uglify": "^2.0.0",
     "pump": "^1.0.1"
   }
