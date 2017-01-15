@@ -1,9 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
 var connect = require('gulp-connect');
-var csso = require('gulp-csso');
-var uglify = require('gulp-uglify');
-var pump = require('pump');
 
 //sass
 gulp.task('sass', function () {
@@ -36,19 +33,6 @@ gulp.task('html', function() {
 
 
 
-
-
-//js uglify
-gulp.task('compress', function (cb) {
-  pump([
-        gulp.src('public/js/*.js'),
-        uglify(),
-        gulp.dest('public/js/')
-    ],
-    cb
-  );
-});
-
 //connect 
 gulp.task('server',function(){
     connect.server({
@@ -58,4 +42,4 @@ gulp.task('server',function(){
 })
 
 //default
-gulp.task('default',['watch','server','compress'])
+gulp.task('default',['watch','server'])
