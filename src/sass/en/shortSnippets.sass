@@ -222,6 +222,8 @@
 		+gvAnimation(shadowSwitch 1s infinite ease-in-out)
 
 
+/*Fancies*/
+
 .road
 	perspective: 30px
 	&-inner
@@ -269,4 +271,58 @@
 		-webkit-animation: progress 1s linear infinite
 		animation: progress 1s linear infinite
 		box-shadow: 0 0 1px rgba(0,0,0,0)
+
+
+/*Weather*/
+
+.rain-wrap
+	position: relative
+.clouds
+	position: relative
+	margin: 0 auto
+	width: 25px
+	height: 12px
+	border-radius: 50%
+	background: lightblue
+	box-shadow: 15px -6px 0 4px lightblue,-9px -9px 0 2px lightblue
+	z-index: 5
+
+.drops 
+	text-align: center
+
+.drop
+	display: inline-block
+	width: 10px
+	height: 10px
+	background: lightblue
+	border-radius: 50% 0 50% 50%
+	position: relative
+	opacity: 0
+	animation: rain 550ms infinite linear
+
+.drop:nth-child(odd)
+	top: -15px
+
+.drop:nth-child(even)
+	top: -20px
+
+.drop:nth-child(2)
+	animation-delay: .2s
+
+
+.drop:nth-child(3)
+	animation-delay: .3s
+
+
+.drop:nth-child(4)
+	animation-delay: .1s
+
+
+.bolt
+	text-align: center
+	display: block
+	margin-top: .2em
+	font-size: 3rem
+	opacity: 0
+	animation: bolt 2s infinite
 		
