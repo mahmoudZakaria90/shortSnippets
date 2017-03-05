@@ -156,24 +156,27 @@ input, button {
 button,
 input[type="submit"],
 input[type="reset"],
-input[type="button"] {
+input[type="button"], .gv-btn {
   background-color: #ea8b49;
   border-radius: 0.4rem;
   padding: 0.3em 1.5em;
   cursor: pointer;
   position: relative;
+  text-decoration: none;
+  text-align: center;
+  color: white;
 }
 button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
-input[type="button"]:active {
+input[type="button"]:active, .gv-btn:active {
   box-shadow: none;
   top: 1px;
 }
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
-input[type="button"]:hover {
+input[type="button"]:hover, .gv-btn:hover {
   background-color: #545454;
   color: #ea8b49;
 }
