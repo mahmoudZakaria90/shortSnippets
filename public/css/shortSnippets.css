@@ -353,6 +353,7 @@
   position: relative;
   margin: auto;
   font-size: 10px;
+  overflow: hidden;
 }
 
 /*Spinners */
@@ -487,7 +488,7 @@
   left: 0;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
-  box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   -webkit-animation: scaleY 65ms infinite alternate, move 5s infinite;
   animation: scaleY 65ms infinite alternate, move 5s infinite;
 }
@@ -514,7 +515,7 @@
   border-radius: 50%;
   -webkit-animation: rotate 1s linear infinite;
   animation: rotate 1s linear infinite;
-  box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 .spinner10 > *:nth-child(odd) {
   -webkit-animation-direction: reverse;
@@ -628,7 +629,7 @@
   height: 0;
   border: 1em solid #ea8b49;
   border-radius: 50%;
-  box-shadow: -5em 0 #51b5e3, 5em 0 #545454, 0 0 1px transparent;
+  box-shadow: -5em 0 #51b5e3, 5em 0 #545454, 0 0 1px rgba(0, 0, 0, 0);
   -webkit-animation: shadowSwitch 2s infinite ease-in-out;
   animation: shadowSwitch 2s infinite ease-in-out;
 }
@@ -637,7 +638,7 @@
   height: 0;
   border: 1em solid #ea8b49;
   border-radius: 50%;
-  box-shadow: -4em 0 #51b5e3, 4em 0 #545454, 0 0 1px transparent;
+  box-shadow: -4em 0 #51b5e3, 4em 0 #545454, 0 0 1px rgba(0, 0, 0, 0);
   -webkit-animation: rotateHalf 400ms infinite alternate linear;
   animation: rotateHalf 400ms infinite alternate linear;
 }
@@ -667,7 +668,7 @@
 .road-block {
   width: 30%;
   height: 30%;
-  box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   margin: 0 auto 2rem;
   background-color: white;
   -webkit-animation: move2 2s linear infinite;
@@ -705,7 +706,7 @@
   transform: skew(-50deg) translateZ(0);
   -webkit-animation: progress 1s linear infinite;
   animation: progress 1s linear infinite;
-  box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 /*Weather */

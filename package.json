@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/mahmoudZakaria90/shortSnippets#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "3.9",
+    "gulp-cli": "^2.3.0",
     "gulp-connect": "^5.0.0",
     "gulp-csso": "^2.0.0",
     "gulp-ruby-sass": "^2.1.1",
